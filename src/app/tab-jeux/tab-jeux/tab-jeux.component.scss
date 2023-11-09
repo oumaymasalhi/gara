@@ -1,0 +1,44 @@
+@import './../../../assets/styles/constant.scss';
+
+.tab-jeux-button{
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: center;
+
+    .tab-jeux{
+        background-color: $gara-dark;
+        height: 46px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 6px;
+        padding-right: 6px;
+        width: max-content;
+        border-radius: 48px;
+        button{  
+
+            width: 148px;
+            height: 36px;
+            color: $gara-primary;;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            &.active {
+            background-color: $gara-primary;
+            border-radius: 34px;
+            color: $gara-sea-green;
+            font-size: 14px;
+            font-weight: 800;
+            line-height: 140%; 
+                
+            }
+            
+            &.play-now{
+                img{
+                    margin-left: 6px;
+                }
+            }
+        }
+    }
+}

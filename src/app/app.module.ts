@@ -1,10 +1,14 @@
-import { NgModule, isDevMode } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, isDevMode , Injectable} from '@angular/core';
+import { BrowserModule, HAMMER_GESTURE_CONFIG, HammerGestureConfig, HammerModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './common/header/header.component';
+import { NavigationBarComponent } from './common/navigation-bar/navigation-bar.component';
+import { CustomHammerConfig } from './config/custom-hammer-config';
+
 
 @NgModule({
   declarations: [
@@ -19,9 +23,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HeaderComponent,
+    NavigationBarComponent,
+    HammerModule
   ],
-  providers: [],
+  providers: [{
+    provide: HAMMER_GESTURE_CONFIG,
+    useClass: CustomHammerConfig,
+  },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

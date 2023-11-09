@@ -1,1 +1,10 @@
-<p>tab-jeux works!</p>
+<div class="tab-jeux-button">
+    <div  class="tab-jeux">
+        <button class="jeux btn" (click)="showJeux()" [ngClass]="{'active': active ==='jeux'}" >Jeux</button>
+        <button class="btn play-now" (click)="showPlayNow()" [ngClass]="{'active': active ==='playNow'}">Play now<img src="./../../../assets/icons/film-icon.svg" /></button>
+    </div>
+</div>
+
+<div class="tab-jeux-content">
+    <router-outlet></router-outlet>
+</div>

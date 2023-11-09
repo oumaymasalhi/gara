@@ -1,0 +1,38 @@
+<div class="jeux-container"> 
+    <div class="header-section">
+        <span class="section-title"> Jeux en vedette</span>
+        <img src="./../../../assets/icons/angle-right.svg" />
+    </div>
+
+    <!--<carousel  (swipeleft)="swipe('left')" (swiperight)="swipe('right')">
+        <slide *ngFor="let jeux of jeuxVedette">
+         <gara-swiper-card 
+         [avatar]="jeux.avatar"
+         [image]="jeux.image"
+         [description]="jeux.description"
+         [avatar]="jeux.avatar"
+         [title]="jeux.title">
+        </gara-swiper-card>
+        </slide>
+
+      </carousel>-->
+
+      
+     <div class="carousel">
+        <gara-swiper-card 
+        [avatar]="jeuxVedette[0].avatar"
+        [image]="jeuxVedette[0].image"
+        [description]="jeuxVedette[0].description"
+        [avatar]="jeuxVedette[0].avatar"
+        [title]="jeuxVedette[0].title"
+        [downloadUrl]="jeuxVedette[0].downloadUrl">
+       </gara-swiper-card>
+     </div>
+
+
+     <div class="header-section">
+        <span class="section-title"> Continuer à jouer</span>
+        <img src="./../../../assets/icons/angle-right.svg" />
+    </div>
+
+</div>
