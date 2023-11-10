@@ -12,6 +12,11 @@
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
   
+
+html {
+    font-size:10px;
+}
+
 html, body {
     font-family: 'Manrope';
     color: #FFF;
@@ -20,21 +25,21 @@ html, body {
 .header-section{
     .section-title {
         font-weight:  800;
-        font-size: 16px;
+        font-size: 1.6rem;
         color: #FFF;
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: 800;
-        margin-right: 18px;
+        margin-right: 1.8rem;
     }
 }
 
 
 .owl-carousel.owl-drag .owl-item{
-  //  width: max-content !important;
+    width: max-content !important;
 }
 
 .margin-b-35 {
-    margin-bottom: 35px;
+    margin-bottom: 3.5rem;
 }
 
 .overflow-y-hidden{

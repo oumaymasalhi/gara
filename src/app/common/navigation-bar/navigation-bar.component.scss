@@ -1,16 +1,16 @@
 
 .navigation-bar{
     z-index: 6;
-    width: 383px;
-    height: 62px;
+    width: 38.3rem;
+    height: 6.2rem;
     background-color: #186841;
-    border-radius: 50px;
+    border-radius: 5rem;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     position: fixed;
-    top: calc(100vh - 86px);
-    padding: 10px;
+    top: calc(100vh - 8.6rem);
+    padding: 1rem;
     left: 50%;
-    margin-left: -191px;
+    margin-left: -19.1rem;
 
     
  ul {
@@ -22,7 +22,7 @@
     margin: 0;
     li  {
         font-family: sans-serif;
-        font-size: 11px;
+        font-size: 1.1rem;
         letter-spacing: 1px;
         text-decoration: none;
         color: #000;
@@ -35,8 +35,8 @@
         transition: 0.6s ease-in-out;
         
         img{
-            width: 28px;
-            height: 28px;
+            width: 2.8rem;
+            height: 2.8rem;
         }
         span {
             display: inline-block;
@@ -51,8 +51,8 @@
 
         &.pass{
             background-color: #0D2F20;
-            width: 42px;
-            height: 42px;
+            width: 4.2rem;
+            height: 4.2rem;
             border-radius: 50%;  
             display: flex;
             justify-content: center;
@@ -68,11 +68,10 @@
        &:hover:not(.book, .film) span,
         &.is-active:not(.book, .film) span {
             opacity: 1;
-            max-width: 40px;
+            max-width: 4rem;
             transform: translate3d(0, 0, 0);
             color: #FFF;
-            font-family: Montserrat;
-            font-size: 14px;
+            font-size: 1.4rem;
             font-weight: 600;
         }
       }
@@ -82,18 +81,18 @@
 }
 // this  css added because the the svg not correctly added in design
 .film img, .book img {
-    width: 121px !important;
-    height: 62px !important;
+    width: 12.1rem !important;
+    height: 6.2rem !important;
     
  
 }
 .book img{
     position: absolute;
-    bottom: 0px;
-    right: 111px;
+    bottom: 0;
+    right: 11.1rem;
 }
 .film img{
         position: absolute;
-        bottom: 0px;
-        right: 43px;
+        bottom: 0;
+        right: 4.3rem;
 }

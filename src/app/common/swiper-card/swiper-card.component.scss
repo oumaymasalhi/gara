@@ -1,7 +1,7 @@
 .swiper-card-container{
-    width: 327px;
-    height: 290px;
-    border-radius: 16px ;
+    width: 32.7rem;
+    height: 29rem;
+    border-radius: 1.6rem ;
    // background-image: url("./../../../assets/images/image1.png");;
     background-image:
      linear-gradient(180deg, #1c1d2e03 0%, rgba(28, 29, 46, 0.78) 28.65%, #1C1D2E 68.75%),
@@ -10,41 +10,41 @@
 
    .content{
     margin-top: auto;
-    padding-left: 26px;
-    padding-bottom: 24px;
-    padding-right: 29px;
+    padding-left: 2.6rem;
+    padding-bottom: 2.4rem;
+    padding-right: 2.9rem;
         .card-title, .downloadUrl button{
             color: #FFF;
-            font-size: 12px;
+            font-size: 1.2rem;
             font-weight: 800;
         }
 
         .card-text{
             color: #6E708F;
-        font-size: 12px;
+        font-size: 1.2rem;
         font-weight: 400;
         }
 
         .avatar{
-            margin-bottom: 12px;
+            margin-bottom: 1.2rem;
             img{
-                width: 55px;
-                height: 55px;
+                width: 5.5rem;
+                height: 5.5rem;
                 flex-shrink: 0;
-                border-radius: 16px;
+                border-radius: 1.6rem;
                 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             }
             
         }
         .text{
-            margin-right: 10px;
+            margin-right: 1rem;
         }
 
         .downloadUrl{
             button {
                 background-color: #28293D;
-                border-radius: 50px;
-                font-size: 14px;
+                border-radius: 5rem;
+                font-size: 1.4rem;
                 font-weight: 600;
                 letter-spacing: 0.56px;
             }

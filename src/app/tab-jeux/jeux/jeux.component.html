@@ -127,34 +127,45 @@
         </div>
 
 
-        <!--<div class="tandance margin-b-35">
+       <div class="tandance margin-b-35">
 
             <div class="header-section">
                 <span class="section-title">Tendance Jeuw</span>
                 <img src="./../../../assets/icons/angle-right.svg" />
             </div>
     
-            <div class="download">
-                <gara-download-card></gara-download-card>
+            <div class="download-card">
+
+                <owl-carousel-o [options]="customVedetteOptions">
+                    <ng-template carouselSlide *ngFor="let item of tendance">
+                        <img src="./../../../assets/images/{{item.image}}" />
+                    </ng-template>
+                </owl-carousel-o> 
+
+             
             </div>
         </div>
 
-        <div class="plaire margin-b-35">
+         <div class="plaire margin-b-35">
 
             <div class="header-section">
                 <span class="section-title">Jeux qui pourraient te plaire</span>
                 <img src="./../../../assets/icons/angle-right.svg" />
             </div>
     
-            <div class="rating">
-                <gara-jeux-card *ngFor="let item of autre"
-                    [image]="item.image"
-                    [rate]="item.rate"
-                    [type]="item.type"
-                    [title]="item.title"
-                ></gara-jeux-card>
+            <div class="autre">
+                <owl-carousel-o [options]="customContinueOptions">
+                    <ng-template carouselSlide *ngFor="let item of autre">
+                        <gara-jeux-card  
+                        [image]="item.image"
+                        [rate]="item.rate"
+                        [type]="item.type"
+                        [title]="item.title">
+                    </gara-jeux-card>
+                    </ng-template>
+                </owl-carousel-o> 
             </div>
-        </div>-->
+        </div>
 
         <div class="action">
             <div class="download"  *ngFor="let item of action" class="margin-bottom-14">
