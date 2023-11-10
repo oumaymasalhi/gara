@@ -38,26 +38,5 @@ export class JeuxComponent {
       },
     },
   }
-
-  customContinueOptions: OwlOptions = {
-    mouseDrag: true,
-    touchDrag: true,
-    dots: false,
-    navSpeed: 700,
-    navText: ['', ''],
-    margin:12,
-    responsive: {
-      0: {
-        items: 3.1
-      },
-      600: {
-        items: 3
-      },
-      800: {
-        items: 3.5
-      },
-    },
-  }
-
   
 }

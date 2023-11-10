@@ -20,13 +20,25 @@ html, body {
 }
 
 ::-webkit-scrollbar {
-    width: 3px;
+    width: 2px;
   }
 
 ::-webkit-scrollbar-thumb {
     background: $gara-manatee; 
     border-radius: 10px;
 }
+
+::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+
+
+.gara-container::-webkit-scrollbar-thumb {
+    background: transparent !important;
+}
+
+
+
 
 
 .header-section{
@@ -42,7 +54,7 @@ html, body {
     }
 }
 
-
+//TODO: this could be chnaged with mixin
 .margin-left-21{
     margin-left: 2.1rem;
 }
@@ -61,6 +73,15 @@ html, body {
 
 .margin-b-35 {
     margin-bottom: 3.5rem;
+}
+
+.margin-b-33{
+    margin-bottom: 3.3rem;
+
+}
+
+.margin-right-25{
+    margin-right: 2.5rem;
 }
 
 .overflow-y-hidden{

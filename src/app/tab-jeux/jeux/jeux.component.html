@@ -93,8 +93,8 @@
                 <img src="./../../../assets/icons/angle-right.svg" />
             </div>
     
-            <div class="download" *ngFor="let item of masska" class="margin-bottom-14" >
-                <gara-download-card 
+            <div class="download" class="d-flex flex-wrap" >
+                <gara-download-card *ngFor="let item of masska" class="margin-bottom-14 margin-right-25"
                     [image]="item.image"
                     [title]="item.title"
                     [rate]="item.rate"
@@ -111,8 +111,8 @@
                 <img src="./../../../assets/icons/angle-right.svg" />
             </div>
     
-            <div class="download" *ngFor="let item of studioAfricain" class="margin-bottom-14">
-                <gara-download-card 
+            <div class="download" class="d-flex flex-wrap" >
+                <gara-download-card  *ngFor="let item of studioAfricain" class="margin-bottom-14 margin-right-25"
                     [image]="item.image"
                     [title]="item.title"
                     [rate]="item.rate"
@@ -155,9 +155,9 @@
         </div>
 
         <div class="action">
-            <gara-action-tab />
-            <div class="download"  *ngFor="let item of action" class="margin-bottom-14">
-                <gara-download-card
+            <gara-action-tab  class="margin-b-33"/>
+            <div class="download"  class="d-flex flex-wrap justify-content-center" >
+                <gara-download-card *ngFor="let item of action" class="margin-bottom-14 margin-right-25"
                 [image]="item.image"
                 [title]="item.title"
                 [rate]="item.rate"
