@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { aboki, afroWarrrior, agent, angeloSkate, cavemen, deadEffect, duck, game2minSpace, jetPack, kissoro, kongo, ludo, mzito, needforspeed, oldenGeorges, pako, pakoForever, rekt, templeRun, tetragon, twoDot, viking, worldWar } from 'src/assets/faka-data/data';
 
@@ -8,8 +8,9 @@ import { aboki, afroWarrrior, agent, angeloSkate, cavemen, deadEffect, duck, gam
   styleUrls: ['./jeux.component.scss']
 })
 export class JeuxComponent {
-  jeuxVedette = [ pakoForever, twoDot ]
-  continue = [oldenGeorges, cavemen, rekt, afroWarrrior]
+  
+  jeuxVedette = [ pakoForever, twoDot,  ]
+  continue = [oldenGeorges, cavemen, rekt, afroWarrrior,oldenGeorges, cavemen, rekt, afroWarrrior]
   news = [twoDot, pako, game2minSpace, rekt]
   recommand = [templeRun, cavemen, pakoForever, angeloSkate]
   masska = [kissoro, oldenGeorges]
@@ -18,32 +19,45 @@ export class JeuxComponent {
   autre = [duck, tetragon, rekt, viking]
   action = [agent, deadEffect, worldWar, jetPack, afroWarrrior, kongo]
 
-
-  customOptions: OwlOptions = {
+  customVedetteOptions: OwlOptions = {
     mouseDrag: true,
     touchDrag: true,
-    pullDrag: true,
+    dots: false,
+    navSpeed: 700,
+    navText: ['', ''],
+    margin:21,
+    responsive: {
+      0: {
+        items: 1.2
+      },
+      600: {
+        items: 2
+      },
+      800: {
+        items: 2.5
+      },
+    },
+  }
+
+  customContinueOptions: OwlOptions = {
+    mouseDrag: true,
+    touchDrag: true,
     dots: false,
     navSpeed: 700,
     navText: ['', ''],
     margin:12,
     responsive: {
       0: {
-        items: 1.2
+        items: 3.1
       },
-      400: {
-        items: 1.2
+      600: {
+        items: 3
       },
-      740: {
-        items: 4
+      800: {
+        items: 3.5
       },
-      940: {
-        items: 5
-      }
     },
   }
 
-  swipe(b){
-    console.log(b)
-  }
+  
 }

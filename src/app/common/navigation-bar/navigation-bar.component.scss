@@ -1,5 +1,6 @@
 
 .navigation-bar{
+    z-index: 6;
     width: 383px;
     height: 62px;
     background-color: #186841;
@@ -8,6 +9,8 @@
     position: fixed;
     top: calc(100vh - 86px);
     padding: 10px;
+    left: 50%;
+    margin-left: -191px;
 
     
  ul {
