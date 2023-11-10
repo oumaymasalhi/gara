@@ -22,6 +22,16 @@ html, body {
     color: #FFF;
 }
 
+::-webkit-scrollbar {
+    width: 3px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: $gara-manatee; 
+    border-radius: 10px;
+}
+
+
 .header-section{
     .section-title {
         font-weight:  800;
