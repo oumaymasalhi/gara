@@ -9,10 +9,10 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./download-card.component.scss']
 })
 export class DownloadCardComponent {
-  @Input() name: string = "Golden Feorges";
-  @Input() type: string = "Sport";
-  @Input() rate: number = 4.9;
-  @Input() image: string = "avatar3.png";
-  @Input() downloadUrl: string = "avatar3.png";
+  @Input({required: true}) title: string;
+  @Input({required: true}) type: string;
+  @Input({required: true}) rate: number;
+  @Input({required: true}) image: string;
+  @Input() downloadUrl: string;
 
 }

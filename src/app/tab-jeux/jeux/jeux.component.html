@@ -27,17 +27,15 @@
             <img src="./../../../assets/icons/angle-right.svg" />
         </div>
 
-        <div class="rating">
-            <owl-carousel-o [options]="customContinueOptions">
-                    <ng-template carouselSlide *ngFor="let item of continue">
-                        <gara-jeux-card  
+        <div class="rating d-flex ">
+           
+                        <gara-jeux-card   *ngFor="let item of continue" class="margin-right-12"
                         [image]="item.image"
                         [rate]="item.rate"
                         [type]="item.type"
                         [title]="item.title">
                     </gara-jeux-card>
-                    </ng-template>
-            </owl-carousel-o> 
+                    
         </div>
 
      
@@ -51,17 +49,15 @@
             <img src="./../../../assets/icons/angle-right.svg" />
         </div>
 
-        <div class="download">
-            <owl-carousel-o [options]="customContinueOptions">
-                <ng-template carouselSlide *ngFor="let item of news">
-                    <gara-jeux-card  
+        <div class="download d-flex">
+           
+                    <gara-jeux-card  *ngFor="let item of news" class="margin-right-12"
                     [image]="item.image"
                     [rate]="item.rate"
                     [type]="item.type"
                     [title]="item.title">
                 </gara-jeux-card>
-                </ng-template>
-            </owl-carousel-o> 
+             > 
            
         </div>
     </div>
@@ -74,17 +70,15 @@
         </div>
 
 
-        <div class="rating">
-            <owl-carousel-o [options]="customContinueOptions">
-                <ng-template carouselSlide *ngFor="let item of recommand">
-                    <gara-jeux-card  
+        <div class="rating d-flex">
+            
+                    <gara-jeux-card  *ngFor="let item of recommand" class="margin-right-12"
                     [image]="item.image"
                     [rate]="item.rate"
                     [type]="item.type"
                     [title]="item.title">
                 </gara-jeux-card>
-                </ng-template>
-            </owl-carousel-o> 
+                
           
         </div>
 
@@ -98,7 +92,7 @@
                 <img src="./../../../assets/icons/angle-right.svg" />
             </div>
     
-            <div class="download" *ngFor="let item of masska" class="margin-bottom-14">
+            <div class="download" *ngFor="let item of masska" class="margin-bottom-14" >
                 <gara-download-card 
                     [image]="item.image"
                     [title]="item.title"
@@ -134,15 +128,9 @@
                 <img src="./../../../assets/icons/angle-right.svg" />
             </div>
     
-            <div class="download-card">
+            <div class="download-card d-flex">
 
-                <owl-carousel-o [options]="customVedetteOptions">
-                    <ng-template carouselSlide *ngFor="let item of tendance">
-                        <img src="./../../../assets/images/{{item.image}}" />
-                    </ng-template>
-                </owl-carousel-o> 
-
-             
+                <img src="./../../../assets/images/{{item.image}}" class="margin-right-12" *ngFor="let item of tendance">/>
             </div>
         </div>
 
@@ -153,21 +141,20 @@
                 <img src="./../../../assets/icons/angle-right.svg" />
             </div>
     
-            <div class="autre">
-                <owl-carousel-o [options]="customContinueOptions">
-                    <ng-template carouselSlide *ngFor="let item of autre">
-                        <gara-jeux-card  
+            <div class="autre d-flex">
+                
+                        <gara-jeux-card  *ngFor="let item of autre" class="margin-right-12">
                         [image]="item.image"
                         [rate]="item.rate"
                         [type]="item.type"
                         [title]="item.title">
                     </gara-jeux-card>
-                    </ng-template>
-                </owl-carousel-o> 
+                   
             </div>
         </div>
 
         <div class="action">
+            <gara-action-tab />
             <div class="download"  *ngFor="let item of action" class="margin-bottom-14">
                 <gara-download-card
                 [image]="item.image"
@@ -176,6 +163,7 @@
                 [type]="item.type"
                 [downloadUrl]="item.downloadUrl"></gara-download-card>
             </div>
+            <div class="see-more"> <p>Voir plus</p></div>
         </div>
 
 </div>
