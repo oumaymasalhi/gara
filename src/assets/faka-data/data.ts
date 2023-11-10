@@ -131,7 +131,7 @@ export const pakoForever = {
   rate: 4.5,
   type:"Arcade",
   description:"Des courses poursuites épiques!",
-  background:"bakoBg/jpg"
+  background:"bakoBg.png"
 }
 
 export const rekt = {
@@ -177,7 +177,7 @@ export const worldWar = {
 export const twoDot = {
   image:"twoDot.png",
   title:"Two dots",
-  background:"bakoBg.jpg",
+  background:"txoDotBg.gif",
   downloadUrl:"downloadUrl",
   rate: 4.0,
   type:"Action",
