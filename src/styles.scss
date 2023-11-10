@@ -4,16 +4,17 @@
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 /* Importing Datepicker SCSS file. */
-@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
 
 @import './assets/styles/constant.scss';
 
+@import "./assets/styles/icomoon.css";
 
-
-
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
   
 html, body {
     font-family: 'Manrope';
+    color: #FFF;
 }
 
 .header-section{
@@ -67,4 +68,11 @@ html, body {
            }
     }
  
+}
+
+.margin-b-35 {
+margin-bottom: 35px;
+}
+.overflow-y-hidden{
+    overflow-x: hidden;
 }

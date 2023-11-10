@@ -1,0 +1,16 @@
+.gara-icon {
+    display: inline-block;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    
+    color:white;
+    font-size: 20px;
+
+    &.game-icon {
+        -webkit-mask-image: url("./../icons/game.svg");
+        mask-image: url("./../icons/game.svg");
+    }
+}

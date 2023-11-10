@@ -1,1 +1,23 @@
-<p>navigation-bar works!</p>
+<div class="navigation-bar">
+    <ul class="d-flex justify-content-around align-items-center">
+        <li [routerLink]="APP_ROUTING.JEUX">
+            <img src="./../../../assets/icons/home.svg" />
+            <span>Accueil</span>
+        </li>
+        <li [routerLink]="APP_ROUTING.JEUX" class="is-active">
+            <img src="./../../../assets/icons/game.svg" />
+            <span>Jeux</span>    
+        </li>
+        <li [routerLink]="APP_ROUTING.JEUX" class="book">
+            <img  src="./../../../assets/icons/book.svg" class="film"/>
+            <span>Profile</span>    
+        </li>
+        <li [routerLink]="APP_ROUTING.JEUX" class="film">
+            <img  src="./../../../assets/icons/film.svg" />
+            <span>Profile</span>    
+        </li>
+        <li class="pass" [routerLink]="APP_ROUTING.JEUX" >
+            <img src="./../../../assets/gifs/pass.gif" />
+        </li>
+      </ul>
+</div>

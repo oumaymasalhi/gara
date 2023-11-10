@@ -26,12 +26,9 @@ import { CustomHammerConfig } from './config/custom-hammer-config';
     BrowserAnimationsModule,
     HeaderComponent,
     NavigationBarComponent,
-    HammerModule
+    HammerModule,
+
   ],
-  providers: [{
-    provide: HAMMER_GESTURE_CONFIG,
-    useClass: CustomHammerConfig,
-  },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
