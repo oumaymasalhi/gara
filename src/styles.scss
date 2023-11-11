@@ -49,6 +49,10 @@ html, body {
     }
 }
 
+.owl-item  {
+    width: initial !important;
+}
+
 //TODO: this could be chnaged with mixin
 .margin-left-21{
     margin-left: 2.1rem;
@@ -62,13 +66,6 @@ html, body {
     margin-top: 1.4rem;
 }
 
-.owl-carousel.owl-drag .owl-item{
-  //  width: max-content !important;
-}
-
-.owl-item  {
-    width: initial !important;
-}
 
 .margin-b-35 {
     margin-bottom: 3.5rem;
