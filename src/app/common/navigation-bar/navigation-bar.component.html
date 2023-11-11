@@ -1,22 +1,31 @@
 <div class="navigation-bar">
     <ul class="d-flex justify-content-around align-items-center">
-        <li [routerLink]="APP_ROUTING.JEUX">
+
+        <li [routerLink]="APP_ROUTING.JEUX" (click)="manageItem('home')"
+        [ngClass]="{'is-active': itemName ==='home'}">
             <img src="./../../../assets/icons/home.svg" />
             <span>Accueil</span>
         </li>
-        <li [routerLink]="APP_ROUTING.JEUX" class="is-active">
+
+        <li [routerLink]="APP_ROUTING.JEUX" class="is-active"  (click)="manageItem('game')"
+        [ngClass]="{'is-active': itemName ==='game'}">
             <img src="./../../../assets/icons/game.svg" />
             <span>Jeux</span>    
         </li>
-        <li [routerLink]="APP_ROUTING.JEUX">
+
+        <li [routerLink]="APP_ROUTING.JEUX"  (click)="manageItem('Ebook')"
+        [ngClass]="{'is-active': itemName ==='Ebook'}">
             <img  src="./../../../assets/icons/home.svg"/>
-            <span>Profile</span>    
+            <span>Ebook</span>    
         </li>
-        <li [routerLink]="APP_ROUTING.JEUX">
+
+        <li [routerLink]="APP_ROUTING.JEUX"  (click)="manageItem('Film')"
+        [ngClass]="{'is-active': itemName ==='Film'}">
             <img  src="./../../../assets/icons/home.svg" />
-            <span>Profile</span>    
+            <span>Film</span>    
         </li>
-        <li class="pass" [routerLink]="APP_ROUTING.JEUX" >
+        
+        <li class="pass" [routerLink]="APP_ROUTING.JEUX">
             <img src="./../../../assets/gifs/pass.gif" />
         </li>
       </ul>

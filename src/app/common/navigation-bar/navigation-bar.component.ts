@@ -13,4 +13,9 @@ import { APP_ROUTING } from 'src/app/config/app-routing.config';
 
 export class NavigationBarComponent {
   APP_ROUTING = APP_ROUTING
+  itemName="game"
+  
+  manageItem(itemName:string): void {
+    this.itemName = itemName
+  }
 }

@@ -15,7 +15,7 @@ export const aboki = {
 }
 
 export const afroWarrrior = {
-  image:"afroWarrrior.png",
+  image:"afroWarrior.png",
   title:"Afro Warrior",
   downloadUrl:"downloadUrl",
   rate: 4.5,

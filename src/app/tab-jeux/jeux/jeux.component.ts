@@ -16,7 +16,7 @@ export class JeuxComponent {
   news = [twoDot, pako, game2minSpace, rekt]
   recommand = [templeRun, cavemen, pakoForever, angeloSkate]
   masska = [kissoro, oldenGeorges]
-  studioAfricain = [mzito, aboki, oldenGeorges, ludo, kissoro, afroWarrrior]
+  studioAfricain = [mzito, aboki, oldenGeorges]
   tendance = [tetragon, needforspeed]
   autre = [duck, tetragon, rekt, viking]
   action = [agent, deadEffect, worldWar, jetPack, afroWarrrior, kongo]

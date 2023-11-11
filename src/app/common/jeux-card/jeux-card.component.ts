@@ -9,8 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./jeux-card.component.scss']
 })
 export class JeuxCardComponent {
-  @Input() name: string = "Golden Feorges";
-  @Input() type: string = "Sport";
-  @Input() rate: number = 4.9;
-  @Input() image: string = "avatar3.png";
+  @Input({required:true}) name: string 
+  @Input({required:true}) type: string 
+  @Input({required:true}) rate: number 
+  @Input({required:true}) image: string 
 }
