@@ -44,13 +44,6 @@ export class JeuxComponent {
     },
   }
 
-  initialized(e){
-    console.log(e)
-    console.log(this.carousel)
-    this.jeuxVedette.forEach((value, i) =>{
-      console.log(e.slides[i])
-        e.slides[i].width = 333
-    })
-  }
+
   
 }
