@@ -57,41 +57,8 @@
             justify-content: center;
             align-items: center;      
         }
-
-        &:hover:not(.book, .film),
-        &.is-active:not(.book, .film) {
-            color: #fff;
-            background-color: #0D2F20;
-        }
-
-       &:hover:not(.book, .film) span,
-        &.is-active:not(.book, .film) span {
-            opacity: 1;
-            max-width: 4rem;
-            transform: translate3d(0, 0, 0);
-            color: #FFF;
-            font-size: 1.4rem;
-            font-weight: 600;
-        }
       }
   }
 
 
-}
-// this  css added because the the svg not correctly added in design
-.film img, .book img {
-    width: 12.1rem !important;
-    height: 6.2rem !important;
-    
- 
-}
-.book img{
-    position: absolute;
-    bottom: 0;
-    right: 11.1rem;
-}
-.film img{
-        position: absolute;
-        bottom: 0;
-        right: 4.3rem;
 }

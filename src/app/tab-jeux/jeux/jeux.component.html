@@ -5,9 +5,9 @@
             <img src="./../../../assets/icons/angle-right.svg" />
         </div>
 
-        <owl-carousel-o [options]="customVedetteOptions">
+        <owl-carousel-o [options]="customVedetteOptions" #carousel (initialized)="initialized($event)" >
             <ng-container *ngFor="let item of jeuxVedette" >
-                <ng-template carouselSlide [id]="item.title">
+                <ng-template carouselSlide [id]="item.title"[width]="400">
                     <gara-swiper-card 
                     [avatar]="item.image"
                     [image]="item.background"

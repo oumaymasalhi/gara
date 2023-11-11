@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, ViewChild} from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { aboki, afroWarrrior, agent, angeloSkate, cavemen, deadEffect, duck, game2minSpace, jetPack, kissoro, kongo, ludo, mzito, needforspeed, oldenGeorges, pako, pakoForever, rekt, templeRun, tetragon, twoDot, viking, worldWar } from 'src/assets/faka-data/data';
 
@@ -9,6 +9,8 @@ import { aboki, afroWarrrior, agent, angeloSkate, cavemen, deadEffect, duck, gam
 })
 export class JeuxComponent {
   
+@ViewChild("carousel") carousel : any
+
   jeuxVedette = [ pakoForever, twoDot,  ]
   continue = [oldenGeorges, cavemen, rekt, afroWarrrior,oldenGeorges, cavemen, rekt, afroWarrrior]
   news = [twoDot, pako, game2minSpace, rekt]
@@ -24,19 +26,31 @@ export class JeuxComponent {
     touchDrag: true,
     dots: false,
     navSpeed: 700,
-    navText: ['', ''],
     margin:21,
+    merge:false,
     responsive: {
       0: {
-        items: 1.2
+        items: 1
+      },
+      350: {
+        items: 1
       },
       600: {
-        items: 2
+        items: 1.2
       },
       800: {
         items: 2.5
       },
     },
+  }
+
+  initialized(e){
+    console.log(e)
+    console.log(this.carousel)
+    this.jeuxVedette.forEach((value, i) =>{
+      console.log(e.slides[i])
+        e.slides[i].width = 333
+    })
   }
   
 }

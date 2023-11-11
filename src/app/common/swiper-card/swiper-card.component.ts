@@ -25,8 +25,6 @@ export class SwiperCardComponent implements OnInit {
   ngOnInit(): void {
     this.backgroundImageUrl= `linear-gradient(180deg, #1c1d2e03 0%, rgba(28, 29, 46, 0.78) 28.65%, #1C1D2E 68.75%),
     url('./../../../assets/images/${this.image}')`
-    console.log(this.backgroundImageUrl)
-    //this.cdr.detectChanges()
       
   }
 

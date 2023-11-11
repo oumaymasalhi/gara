@@ -36,11 +36,6 @@ html, body {
 .gara-container::-webkit-scrollbar-thumb {
     background: transparent !important;
 }
-
-
-
-
-
 .header-section{
     display: flex;
     align-items: center;
@@ -68,7 +63,11 @@ html, body {
 }
 
 .owl-carousel.owl-drag .owl-item{
-    width: max-content !important;
+  //  width: max-content !important;
+}
+
+.owl-item  {
+    width: initial !important;
 }
 
 .margin-b-35 {
